@@ -1,0 +1,120 @@
+:root {
+  --Roboto: 'Roboto', sans-serif;
+  --Lobster: 'Lobster', cursive;
+  --Dancing-Script: 'Dancing Script', cursive;
+  --Monoton: 'Monoton', cursive;
+  --Rock-Salt: 'Rock Salt', cursive;
+
+  --light-lightgreen: #AAFFAA;
+}
+
+/* ID's
+*/
+
+#footer {
+  width: 100%;
+  bottom: 0; left: 0;
+  position: fixed;
+  padding: 3em;
+  background: gray;
+}
+#formulary {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#header_layer {
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+#logo {
+  font-family: var(--Rock-Salt);
+  cursor: default;
+  font-weight: lighter;
+}
+#navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+#formulary_container {
+  padding: 4em 0;
+  display: flex;
+  justify-content: space-around;
+}
+#main_layer {
+  padding: 1em 4em;
+}
+#navbar_link_container {
+  display: flex;
+}
+#body {
+  background-image: url("img/background.jpg");
+}
+
+/* CLASSES
+*/
+
+.send_button {
+  font-family: var(--Lobster);
+  padding: 1em; margin: 1em 0;
+  background: transparent;
+  border: transparent;
+  font-weight: bold;
+  font-size: 20px;
+}
+.send_button:hover {
+  transition: 0.5s;
+  color: lightgreen;
+  font-weight: bold;
+  border: 3px solid lightgreen;
+  border-style: none none solid none;
+  cursor: pointer;
+}
+.error_text {
+  padding: 0.5em;
+  text-align: center;
+  font-family: var(--Roboto);
+  font-size: 15px;
+  background: #FFAAAA;
+  border: 1px solid red;
+}
+.title {
+  padding: 1em 0;
+  font-weight: bold;
+  font-size: 40px;
+  font-family: var(--Dancing-Script);
+  cursor: default;
+}
+.navbar_link {
+  text-decoration: none;
+  color: inherit;
+  padding: 1em; margin: 0 1em;
+  font-family: var(--Roboto);
+}
+.navbar_link:hover {
+  border-radius: 10px;
+  transition: 0.5s;
+  background: lightgreen;
+  cursor: pointer;
+}
+.text {
+  text-indent: 1em;
+  text-align: justify;
+  font-family: var(--Roboto);
+}
+.formulary_input {
+  text-align: center;
+  padding: 1em 0;
+  font-family: var(--Roboto);
+}
+.no_link {
+  text-decoration: none;
+  color: inherit;
+}
+.formulary_label {
+  padding: 1em;
+}
